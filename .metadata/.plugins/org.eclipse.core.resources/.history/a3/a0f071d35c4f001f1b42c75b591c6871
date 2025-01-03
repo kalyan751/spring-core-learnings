@@ -1,5 +1,0 @@
-package in.pwskills.kalyan.dao;
-
-public class CustomerDaoImpl implements ICustomerDao {
-
-}

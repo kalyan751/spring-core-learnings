@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- this configuration file is for which container? ===> its for ApplicationContext -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- step 1 : please create one bean , step 2 : id= it means reference name, step3 on what class that is class=]-->
+	<bean id="bank" class="in.pwskills.kalyan.beans.Bank">
+		<!-- On this bean when you call the replaced method what is the replaced method  , 
+		in this bean when this method is getting called which object method I need to execute-->
+		<replaced-method name = "calculateCompoundInterest" replacer = "interestReplacer">
+		
+		
+		<!-- For this replacer any argument you need to pass, yes -->
+		<arg-type>double</arg-type>
+		<arg-type>double</arg-type>
+		<arg-type>double</arg-type>
+		
+		</replaced-method>
+	</bean>
+</beans>

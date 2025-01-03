@@ -1,6 +1,0 @@
-package in.pwskills.kalyan.bean;
-
-public class Flipkart {
-	private ICourier courier;
-	
-}	

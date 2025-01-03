@@ -1,5 +1,0 @@
-package in.pwskills.kalyan.bean;
-
-public class Employee implements Serializable {
-
-}

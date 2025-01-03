@@ -1,5 +1,0 @@
-package in.pwskills.kalyan.service;
-
-public interface ICustomerService {
-
-}
